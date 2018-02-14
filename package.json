@@ -26,7 +26,6 @@
     "scripts"
   ],
   "dependencies": {
-    "@umm/singleton": "^1.0.0",
     "@umm/unirx": "^1.0.3",
     "glob": "^7.1.2",
     "mkdirp": "^0.5.1",
