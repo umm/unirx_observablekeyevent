@@ -5,7 +5,7 @@ using UnityEngine;
 // ReSharper disable MemberCanBePrivate.Global
 // ReSharper disable UnusedMember.Global
 
-namespace UniRx.Triggers {
+namespace UniRx {
 
     public static class ObservableKeyEvent {
 
@@ -39,18 +39,22 @@ namespace UniRx.Triggers {
 
     }
 
-    public static class KeyEventComponentExtension {
+    namespace Triggers {
 
-        public static IObservable<Unit> OnKeyAsObservable(this Component component, KeyCode keyCode) {
-            return ObservableKeyEvent.OnKeyAsObservable(keyCode).TakeUntilDestroy(component);
-        }
+        public static class KeyEventComponentExtension {
 
-        public static IObservable<Unit> OnKeyDownAsObservable(this Component component, KeyCode keyCode) {
-            return ObservableKeyEvent.OnKeyDownAsObservable(keyCode).TakeUntilDestroy(component);
-        }
+            public static IObservable<Unit> OnKeyAsObservable(this Component component, KeyCode keyCode) {
+                return ObservableKeyEvent.OnKeyAsObservable(keyCode).TakeUntilDestroy(component);
+            }
 
-        public static IObservable<Unit> OnKeyUpAsObservable(this Component component, KeyCode keyCode) {
-            return ObservableKeyEvent.OnKeyUpAsObservable(keyCode).TakeUntilDestroy(component);
+            public static IObservable<Unit> OnKeyDownAsObservable(this Component component, KeyCode keyCode) {
+                return ObservableKeyEvent.OnKeyDownAsObservable(keyCode).TakeUntilDestroy(component);
+            }
+
+            public static IObservable<Unit> OnKeyUpAsObservable(this Component component, KeyCode keyCode) {
+                return ObservableKeyEvent.OnKeyUpAsObservable(keyCode).TakeUntilDestroy(component);
+            }
+
         }
 
     }
