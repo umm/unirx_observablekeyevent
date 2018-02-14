@@ -39,24 +39,4 @@ namespace UniRx {
 
     }
 
-    namespace Triggers {
-
-        public static class KeyEventComponentExtension {
-
-            public static IObservable<Unit> OnKeyAsObservable(this Component component, KeyCode keyCode) {
-                return ObservableKeyEvent.OnKeyAsObservable(keyCode).TakeUntilDestroy(component);
-            }
-
-            public static IObservable<Unit> OnKeyDownAsObservable(this Component component, KeyCode keyCode) {
-                return ObservableKeyEvent.OnKeyDownAsObservable(keyCode).TakeUntilDestroy(component);
-            }
-
-            public static IObservable<Unit> OnKeyUpAsObservable(this Component component, KeyCode keyCode) {
-                return ObservableKeyEvent.OnKeyUpAsObservable(keyCode).TakeUntilDestroy(component);
-            }
-
-        }
-
-    }
-
 }
