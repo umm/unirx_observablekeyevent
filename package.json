@@ -1,6 +1,6 @@
 {
   "name": "@umm/unirx_observablekeyevent",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "UniRx wrapper for KeyEvent handling.",
   "homepage": "https://github.com/umm/unirx_observablekeyevent",
   "bugs": {
