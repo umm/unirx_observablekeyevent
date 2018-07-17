@@ -4,12 +4,12 @@
 
 ## Requirement
 
-* [UniRx](https://github.com/neuecc/unirx) ([umm](https://github.com/umm-projects/unirx))
+* [UniRx](https://github.com/neuecc/unirx) ([umm](https://github.com/umm/unirx))
 
 ## Install
 
 ```shell
-npm install github:umm-projects/unirx_observablekeyevent
+npm install github:umm/unirx_observablekeyevent
 ```
 
 ## Usage
