@@ -1,0 +1,22 @@
+{
+  "name": "dev.upm-packages.unirx-observablekeyevent",
+  "displayName": "Singleton AudioListener",
+  "version": "1.3.0",
+  "unity": "2019.3",
+  "description": "UniRx wrapper for KeyEvent handling.",
+  "author": {
+    "name": "Tetsuya Mori",
+    "url": "https://me.monry.dev/",
+    "email": "monry84@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "category": "",
+  "dependencies": {
+    "jp.cysharp.unirx": "7.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umm/unirx_observablekeyevent"
+  }
+}
